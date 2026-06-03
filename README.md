@@ -7,9 +7,6 @@ This project demonstrates how I utilize **SQL with logical filters (AND, OR, NOT
 
 ---
 
-Aquí puedes ver la captura del análisis de los paquetes:
-![Análisis en Wireshark](nombre-de-tu-imagen.png)
-
 ## Task 1: Retrieve After-Hours Failed Login Attempts
 
 ### 1. Incident Context
@@ -23,6 +20,7 @@ SELECT * FROM log_in_attempts
 WHERE login_time > '18:00' 
   AND success = FALSE;
 ```
+![Output of the query](Lab_1.1.png)
 
 Task 2: Retrieve Login Attempts on Specific Dates
 1. Incident Context
@@ -36,6 +34,7 @@ SELECT * FROM log_in_attempts
 WHERE login_date = '2022-05-09' 
    OR login_date = '2022-05-08';
 ```
+![Output of the query](Lab_1.2.png)
 
 Task 3: Retrieve Login Attempts Outside of Mexico
 1. Incident Context
@@ -48,6 +47,7 @@ In the dataset, Mexico is represented as both MEX and MEXICO. To isolate externa
 SELECT * FROM log_in_attempts 
 WHERE NOT country LIKE 'MEX%';
 ```
+![Output of the query](Lab_1.3.png)
 
 Task 4: Retrieve Employees in the Marketing Department
 1. Incident Context
@@ -61,7 +61,9 @@ SELECT * FROM employees
 WHERE department = 'Marketing' 
   AND building = 'East';
 ```
-Summary & Key Takeaways
+![Output of the query](Lab_1.4.png)
+
+## Summary & Key Takeaways
 Throughout these tasks, I successfully demonstrated the ability to:
 
 Filter complex datasets to pinpoint  critical security incidents using AND / OR logic.
