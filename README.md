@@ -20,7 +20,7 @@ SELECT * FROM log_in_attempts
 WHERE login_time > '18:00' 
   AND success = FALSE;
 ```
-![Output of the query](Lab_1.1.png)
+![Output of the query](Lab_1.1.PNG)
 
 Task 2: Retrieve Login Attempts on Specific Dates
 1. Incident Context
