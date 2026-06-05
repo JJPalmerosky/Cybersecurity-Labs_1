@@ -34,7 +34,7 @@ SELECT * FROM log_in_attempts
 WHERE login_date = '2022-05-09' 
    OR login_date = '2022-05-08';
 ```
-![Output of the query](Lab_1.2.png)
+![Output of the query](Lab_1.2.PNG)
 
 Task 3: Retrieve Login Attempts Outside of Mexico
 1. Incident Context
@@ -47,7 +47,7 @@ In the dataset, Mexico is represented as both MEX and MEXICO. To isolate externa
 SELECT * FROM log_in_attempts 
 WHERE NOT country LIKE 'MEX%';
 ```
-![Output of the query](Lab_1.3.png)
+![Output of the query](Lab_1.3.PNG)
 
 Task 4: Retrieve Employees in the Marketing Department
 1. Incident Context
@@ -61,7 +61,7 @@ SELECT * FROM employees
 WHERE department = 'Marketing' 
   AND building = 'East';
 ```
-![Output of the query](Lab_1.4.png)
+![Output of the query](Lab_1.4.PNG)
 
 ## Summary & Key Takeaways
 Throughout these tasks, I successfully demonstrated the ability to:
